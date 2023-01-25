@@ -24,4 +24,4 @@ def func():
     return result
 
 func() 
-#print(func())
+#print(func()) # prints result of for loop
