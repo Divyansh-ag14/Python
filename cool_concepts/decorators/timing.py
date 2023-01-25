@@ -9,6 +9,7 @@ def timer(func):
         s = time.time()
         val = func(*args, **kwargs)
         e = time.time()
+        print(f"function: {func.__name__}")
         print(f"function execution time {e-s} seconds!")
         return val
         
