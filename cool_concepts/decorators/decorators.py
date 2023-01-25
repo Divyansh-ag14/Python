@@ -9,4 +9,12 @@ def decorate(func):
 def hello():
     print("hello!")
 
-decorate(hello)()
+# not the right way
+#decorate(hello)()
+
+@decorate
+def hello_world():
+    print("Hello World!")
+    
+hello_world()
+
