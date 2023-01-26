@@ -1,3 +1,5 @@
+# generators are used for on demand sourcing
+
 def square_generator(n):
     for x in range(1,n):
         yield x*x
