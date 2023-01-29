@@ -23,8 +23,11 @@ class Person:
         
         
 p = Person("dan", 22)
+#print(p.Name)
+#print(p.Age)
 p.show()
 p.Age = 24
 p.show()
 p.Age = -1
 p.show()
+
