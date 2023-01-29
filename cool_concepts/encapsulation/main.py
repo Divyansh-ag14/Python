@@ -23,7 +23,11 @@ class Person:
     @Age.setter # setter
     def Age(self, value):
         if value>0:
+            print("making updates")
             self.__age = value
+        else:
+            print("Age remains same")
+        
             
     def show(self): 
         print(self.__name, self.__age)
