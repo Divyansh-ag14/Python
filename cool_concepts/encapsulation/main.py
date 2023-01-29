@@ -5,6 +5,13 @@ class Person:
         self.__name = name 
         self.__age = age
     
+    # static method do not need to be called from objects 
+    # they cam be directly accessed using the class name
+    # they can work without passing the self argument
+    @staticmethod
+    def hello():
+        print("Hello world")
+    
     @property  #getter
     def Name(self):
         return self.__name
@@ -21,7 +28,8 @@ class Person:
     def show(self): 
         print(self.__name, self.__age)
         
-        
+
+Person.hello()     
 p = Person("dan", 22)
 #print(p.Name)
 #print(p.Age)
