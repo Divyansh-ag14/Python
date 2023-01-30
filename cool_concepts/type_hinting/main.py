@@ -6,6 +6,6 @@ def func(param: int):
     print(param)
     
 func(1)
-func("divyansh")
+func("divyansh") #does not lead to error
     
     
