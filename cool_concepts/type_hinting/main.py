@@ -9,5 +9,7 @@ def func(param: int) -> None:
     
 func(1)
 func("divyansh") #does not lead to error
+
+# however we can use type hinting with mypy to fix this
     
     
