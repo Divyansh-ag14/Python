@@ -28,7 +28,19 @@ class Teacher(IPerson):
     def person(self):
         print("I am a teacher")
 
-p = Student()
+# decide during run time which child class object to create       
+class PersonFactory:
+    @staticmethod
+    def build_person(person_type: str):
+        if person_type == "Student":
+            return Student()
+        elif person_type == "Teacher":
+            return Teacher()
+        else:
+            return
+        
+
+choice = input("Enter type: ")
+#PersonFactory.build_person(choice).person()
+p = PersonFactory.build_person(choice)
 p.person()
-p2 = Teacher()
-p2.person()
