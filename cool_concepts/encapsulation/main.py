@@ -5,7 +5,7 @@ class Person:
         self.__name = name 
         self.__age = age
     
-    # static method do not need to be called from objects 
+    # static methods do not need to be called from objects 
     # they cam be directly accessed using the class name
     # they can work without passing the self argument
     @staticmethod
