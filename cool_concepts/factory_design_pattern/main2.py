@@ -31,3 +31,13 @@ class PersonFactory:
 objs = ["Student", "Teacher"]
 for obj in objs:
     PersonFactory.build_person(obj).person()
+
+print("")
+
+try:
+    ch = input("type: ")
+    PersonFactory.build_person(ch).person()
+    
+except Exception as e:
+    print("error:",e)
+    
