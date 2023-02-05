@@ -3,6 +3,6 @@ Type hints are performed using Python annotations (introduced since PEP 3107). T
 mypy is a tool that checks for the consistency of the type hints
 
 installation: pip install mypy
-usage: mypy (filename)
+usage: "mypy (filename).py"
 
 ![mypy console command](mypy.jpg)
