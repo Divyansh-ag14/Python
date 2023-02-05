@@ -2,6 +2,7 @@
 
 from abc import ABCMeta, abstractstaticmethod
 
+# interface
 class IPerson(metaclass = ABCMeta):
     @abstractstaticmethod
     def person_func():
