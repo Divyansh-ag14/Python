@@ -1,3 +1,5 @@
+# the idea is to instantiate the class only once
+
 from abc import ABCMeta, abstractstaticmethod
 
 class IPerson(metaclass=ABCMeta):
