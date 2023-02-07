@@ -17,6 +17,9 @@ class Accounting(IDepartment):
         print("This is accounting department")
         print(f"Number of employees: {self.emps}")
         
+    def __repr__(self):
+        return "Accounting Department"
+        
 class DataScience(IDepartment):
     def __init__(self, emps):
         self.emps = emps
@@ -24,6 +27,8 @@ class DataScience(IDepartment):
     def print_department(self):
         print("This is Data Science department")
         print(f"Number of employees: {self.emps}")
+    def __repr__(self):
+        return "Data Science Department"
         
 class ParentDepartment(IDepartment):
     def __init__(self, emps):
@@ -40,7 +45,8 @@ class ParentDepartment(IDepartment):
         print(f"Base Employees: {self.base_emps}")
         print("Sub Departments:")
         for dept in self.sub_depts:
-            dept.print_department()
+            #dept.print_department()
+            print(f"{dept}: employees = {dept.emps}")
         print(f"total employees in parent department: {self.emps}")
         
 dept1 = Accounting(1)
