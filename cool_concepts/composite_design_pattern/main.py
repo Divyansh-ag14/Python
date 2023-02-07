@@ -1,3 +1,6 @@
+# the idea is when we have multiple child classes that inherit fromm the same parent then
+# there can be a class that contains other classes
+
 from abc import ABCMeta, abstractstaticmethod, abstractmethod
 
 class IDepartment(metaclass=ABCMeta):
