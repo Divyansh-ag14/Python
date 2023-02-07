@@ -2,4 +2,4 @@ Composite Method is a S**tructural Desingn Pattern** which describes a group of 
 
 One of the main advantages of using the Composite Method is that first, it allows you to compose the objects into the **Tree Structure** and then work with these structures as an individual object or an entity
 
-![composite design] ](class_diag.jpg)
+![composite design] ](class_diag.png)
