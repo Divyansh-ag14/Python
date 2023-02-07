@@ -45,8 +45,8 @@ class ParentDepartment(IDepartment):
         print(f"Base Employees: {self.base_emps}")
         print("Sub Departments:")
         for dept in self.sub_depts:
-            #dept.print_department()
-            print(f"{dept}: employees = {dept.emps}")
+            dept.print_department()
+            #print(f"{dept}: employees = {dept.emps}")
         print(f"total employees in parent department: {self.emps}")
         
 dept1 = Accounting(1)
