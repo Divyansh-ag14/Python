@@ -15,5 +15,10 @@ t2 = threading.Thread(target=func2)
 # t1.start()
 # t2.start()
 
-t1.start() 
-print("some code") # this statement does not wait for the above thread to finish
+#t1.start() 
+#print("some code") # this statement does not wait for the above thread to finish
+
+# .join() is used to wait for threads
+t1.start()
+t1.join()
+print("executed after t1")
