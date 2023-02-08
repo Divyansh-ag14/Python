@@ -19,6 +19,7 @@ t2 = threading.Thread(target=func2)
 #print("some code") # this statement does not wait for the above thread to finish
 
 # .join() is used to wait for threads
+# it makes the main thread wait until specified thread is executed
 t1.start()
 t1.join()
 print("executed after t1")
