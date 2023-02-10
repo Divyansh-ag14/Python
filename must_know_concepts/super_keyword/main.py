@@ -7,8 +7,8 @@ class Child(Parent):
         print("method of child class")
         
     def child_method(self):
-        print("I am child class!")
-        
+        self.func()
+        #print("I am child class!")
         super().func()
     
 c1 = Child()
