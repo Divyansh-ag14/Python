@@ -19,6 +19,7 @@ c1.child_method()
 # c1.hello()
 print("")
 # calling constructor of parent
+# helps in reducing code
 class A:
     def __init__(self, name, age):
         self.name = name
@@ -28,6 +29,7 @@ class B(A):
     def __init__(self, name, age, gender):
         super().__init__(name, age)
         self.gender = gender
+        # we did not have to manually assing self with name and age again
         
     def print_details(self):
         print(self.name)
