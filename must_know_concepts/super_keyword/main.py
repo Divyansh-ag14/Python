@@ -17,7 +17,7 @@ class Child(Parent):
 c1 = Child()
 c1.child_method()
 # c1.hello()
-
+print("")
 # calling constructor of parent
 class A:
     def __init__(self, name, age):
